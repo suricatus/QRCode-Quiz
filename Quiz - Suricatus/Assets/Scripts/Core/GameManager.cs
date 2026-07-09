@@ -26,6 +26,7 @@ namespace Core
         public static event Action<StationData> OnAnswerCorrect;
         public static event Action OnAnswerWrong;
         public static event Action<StationData> OnHintRequested;
+        public static event Action<int> OnStationLocked;
 
         private void Awake()
         {
@@ -63,6 +64,13 @@ namespace Core
                 Debug.LogWarning($"[GameManager] Station {stationId} not found.");
                 return;
             }
+            
+            if (CurrentStation.isFinalStation && !ProgressManager.Instance.CanAccessFinalStation())
+            {
+                UIController.Instance.ShowScreen(GameScreen.Locked);
+                OnStationLocked?.Invoke(ProgressManager.Instance.MissingForFinal);
+                return;
+            }
 
             UIController.Instance.ShowScreen(GameScreen.Quiz);
             OnStationLoaded?.Invoke(CurrentStation);
@@ -83,6 +91,7 @@ namespace Core
 
             if (isCorrect)
             {
+                ProgressManager.Instance.MarkStationComplete(CurrentStation.stationId);
                 UIController.Instance.ShowScreen(GameScreen.Correct);
                 OnAnswerCorrect?.Invoke(CurrentStation);
             }

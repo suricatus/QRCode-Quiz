@@ -19,6 +19,9 @@ namespace Data
         public string curiosityText;
         [TextArea(2, 4)]
         public string hintText;
+        
+        [Header("Puzzle Piece")]
+        public Sprite puzzlePiece;
 
         [Header("Final Station")]
         [Tooltip("Marque verdadeiro na última estação para aparecer a tela de premiação junto com a dica")]

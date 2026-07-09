@@ -22,4 +22,5 @@ MonoBehaviour:
   curiosityText: "A It\xE1lia n\xE3o joga uma Copa do Mundo FIFA desde 2014"
   hintText: "Estamos quase l\xE1! Eu estou em um lugar onde existem muitos tra\xE7os,
     cores e formatos."
+  puzzlePiece: {fileID: -305089989, guid: fd6cb592190e4d0478872c048c13d0cc, type: 3}
   isFinalStation: 0

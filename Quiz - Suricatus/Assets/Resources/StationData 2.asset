@@ -23,4 +23,5 @@ MonoBehaviour:
     do Halaand.
   hintText: "Voc\xEA nem sempre vai me usar para sair, mas \xE9 importante saber
     onde eu estou caso precise."
+  puzzlePiece: {fileID: 137539899, guid: fd6cb592190e4d0478872c048c13d0cc, type: 3}
   isFinalStation: 0
