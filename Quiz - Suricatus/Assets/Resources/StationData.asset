@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50a50a9ab6841ff41aa76c5ebb1b47c9, type: 3}
+  m_Name: StationData
+  m_EditorClassIdentifier: Assembly-CSharp::Data.StationData
+  stationId: 1
+  questionText: Qual o governo que apoia os jovens que querem entrar no mercado de
+    jogos digitais?
+  answerOptions:
+  - Governo da Bahia
+  - Gov do Pernambuco
+  - Nenhum Governo
+  correctAnswerIndex: 0
+  curiosityText: "O Governo da Bahia j\xE1 ajudou mais de 1000 jovens a entrarem
+    no mercado digital!"
+  hintText: "Estou perto de onde as pessoas costumam se aliviar quando bebem muita
+    \xE1gua."
+  isFinalStation: 0
