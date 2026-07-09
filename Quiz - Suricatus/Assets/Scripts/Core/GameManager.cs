@@ -8,6 +8,7 @@ namespace Core
     public class GameManager : MonoBehaviour
     {
         private const string StationUrlParameter = "station";
+        private const string PrizeUrlParameter = "prize";
         
         public static GameManager Instance { get; private set; }
         
@@ -16,6 +17,7 @@ namespace Core
 
         [Header("Debug(Editor only)")]
         [SerializeField] private int debugStationId = 1;
+        [SerializeField] private bool debugPrizeScreen = false;
         
         public StationData CurrentStation { get; private set; }
         public int SelectedAnswerIndex { get; private set; } = -1;
@@ -38,6 +40,11 @@ namespace Core
 
         private void Start()
         {
+            if (IsPrizeScreen())
+            {
+                UIController.Instance.ShowScreen(GameScreen.Prize);
+                return;
+            }
             LoadStationFromURL();
         }
         
@@ -114,5 +121,17 @@ namespace Core
             return int.TryParse(raw, out int id) ? id : -1;
 #endif
         }
+        
+        private bool IsPrizeScreen()
+        {
+#if UNITY_EDITOR
+            return debugPrizeScreen;
+#else
+    var raw = URLParameterReader.GetParameter(PrizeUrlParameter);
+    return !string.IsNullOrEmpty(raw);
+#endif
+        }
     }
+    
+
 }

@@ -9,7 +9,8 @@ namespace UI
         Correct,
         Hint,
         Wrong,
-        Final
+        Final,
+        Prize
     }
     
     public class UIController : MonoBehaviour
@@ -22,6 +23,7 @@ namespace UI
         [SerializeField] private GameObject hintScreen;
         [SerializeField] private GameObject wrongScreen;
         [SerializeField] private GameObject finalScreen;
+        [SerializeField] private GameObject prizeScreen;
 
         private void Awake()
         {
@@ -41,6 +43,7 @@ namespace UI
             hintScreen.SetActive(screen == GameScreen.Hint);
             wrongScreen.SetActive(screen == GameScreen.Wrong);
             finalScreen.SetActive(screen == GameScreen.Final);
+            prizeScreen.SetActive(screen == GameScreen.Prize);
         }
     }
 }
