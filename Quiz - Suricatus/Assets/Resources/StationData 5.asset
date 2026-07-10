@@ -23,5 +23,6 @@ MonoBehaviour:
     4000 pessoas nos seus 3 dias de evento! E voc\xEA faz parte disso, muito obrigado!"
   hintText: "Parab\xE9ns! Voc\xEA coletou todas as dicas, v\xE1 at\xE9 o estande
     do Governo do Estado da Bahia para coletar o seu brinde!"
-  puzzlePiece: {fileID: -1382116423, guid: fd6cb592190e4d0478872c048c13d0cc, type: 3}
+  puzzlePiece: {fileID: -7181617175893865164, guid: 93efb422276180b498d6685e842f8b9e, type: 3}
+  placeholderPiece: {fileID: -7097967111496388114, guid: e5ae78bd836137b4c85a53d86bd0648c, type: 3}
   isFinalStation: 1

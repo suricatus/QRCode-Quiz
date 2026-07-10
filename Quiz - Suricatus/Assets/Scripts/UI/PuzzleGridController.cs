@@ -39,6 +39,7 @@ namespace UI
             _gridLayout.constraintCount = columns;
             _gridLayout.cellSize = cellSize;
             _gridLayout.spacing = cellSpacing;
+            _gridLayout.childAlignment = TextAnchor.MiddleCenter;
         }
         
         public void Refresh()
@@ -60,7 +61,7 @@ namespace UI
 
                 img.sprite = isRevealed && station.puzzlePiece != null
                     ? station.puzzlePiece
-                    : placeholderSprite;
+                    : station.placeholderPiece != null ? station.placeholderPiece : placeholderSprite;
 
                 img.preserveAspect = false;
                 _cells.Add(img);

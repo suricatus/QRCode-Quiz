@@ -24,5 +24,6 @@ MonoBehaviour:
     Alemanha! Que saudades!
   hintText: "Falta pouco! Estou em um lugar onde voc\xEA pode conhecer muita gente
     talentosa e ainda jogar alguns jogos bem legais!"
-  puzzlePiece: {fileID: 1276730477, guid: 3757f873ab1a809459f2ff87ce65be64, type: 3}
+  puzzlePiece: {fileID: -4739085030459854948, guid: 78342c55b4c056a4d9b457a452493b2b, type: 3}
+  placeholderPiece: {fileID: -4217583072657318741, guid: 2f4971e4dc0c8a94bac30fe672058af7, type: 3}
   isFinalStation: 0

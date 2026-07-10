@@ -24,5 +24,6 @@ MonoBehaviour:
     no mercado digital!"
   hintText: "Estou perto de onde as pessoas costumam se aliviar quando bebem muita
     \xE1gua."
-  puzzlePiece: {fileID: -869212901, guid: 3757f873ab1a809459f2ff87ce65be64, type: 3}
+  puzzlePiece: {fileID: 5700967474387334138, guid: c4dad3a81b5af1348997efe17671b3da, type: 3}
+  placeholderPiece: {fileID: 5430330374892182646, guid: fda6a227be26ab0439a17431bd1bb5d5, type: 3}
   isFinalStation: 0

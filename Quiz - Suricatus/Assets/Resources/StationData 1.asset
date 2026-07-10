@@ -23,5 +23,6 @@ MonoBehaviour:
     nos p\xEAnaltis."
   hintText: "Estou onde as pessoas n\xE3o sabem o que querem, mas sempre querem algo
     gostoso."
-  puzzlePiece: {fileID: -714864756, guid: 3757f873ab1a809459f2ff87ce65be64, type: 3}
+  puzzlePiece: {fileID: 7289259335246436896, guid: 3a827abc84f2daa46b725156362e8ffb, type: 3}
+  placeholderPiece: {fileID: -9179748144504488595, guid: b448ae1b38e38954dae0fca096e5ba19, type: 3}
   isFinalStation: 0
